@@ -2,7 +2,7 @@ function getIpv4MappedIpv6Address(ipv4) {
 
   // Initialize return argument
   let ipv6Address = null;
-  module.exports.getIpv4MappedIpv6Address = getIpv4MappedIpv6Address;
+  
 
   // Prepare to derive a Hex version of the dotted-quad decimal IPv4 address.
   // Split the IPv4 address into its four parts.
@@ -42,3 +42,4 @@ function getIpv4MappedIpv6Address(ipv4) {
   }
   return ipv6Address;
 }
+module.exports.getIpv4MappedIpv6Address = getIpv4MappedIpv6Address;
